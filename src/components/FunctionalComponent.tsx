@@ -17,6 +17,7 @@ interface Student {
 
 const FunctionalComponent = ({ title, subTitle }: FunctionalComponentProps) => {
   const [counter, setCounter] = useState(0)
+  // typescript inferes from the initial value the type of the state variable!
   const [student, setStudent] = useState<null | Student>(null)
   // the type argument overrides what TS inferes out of your initial value
   // to give a type so student; without it, it will only understand that

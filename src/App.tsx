@@ -1,4 +1,6 @@
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import FormComponent from './components/FormComponent'
 // import ClassComponent from './components/ClassComponent'
 import FunctionalComponent from './components/FunctionalComponent'
 
@@ -11,6 +13,7 @@ function App() {
         {/* { title: string } */}
         {/* <ClassComponent title='Another ClassComponent' /> */}
         <FunctionalComponent title='Custom Function Title' />
+        <FormComponent />
       </header>
     </div>
   )
